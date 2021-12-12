@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="Assets/css/styles.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="icon" href="Assets/img/favicon.ico" type="image/x-icon" />
+    <title>GrandaMedia</title>
+  </head>
+  <body style="background-color: whitesmoke;">
+    <canvas class='snowball' id='snowball'></canvas>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background: rgb(143,112,190);
+    background: radial-gradient(circle, rgba(143,112,190,1) 0%, rgba(148,183,233,1) 100%);">
+      <div class="container-fluid">
+        <img src="Assets/img/logo.png" width="60" height="60" class="brand me-3 ms-5" alt="">
+        <a class="navbar-brand text-white" href="#" style="font-size:25px;text-shadow: 4px 4px 2px rgba(163,141,141,0.6);">GrandaMedia</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <a href="tambah.html" class="btn btn-outline-light fs-5 ms-auto me-4" type="button" style="box-shadow: 10px 10px 18px -3px rgba(155,155,155,0.6);
+          -webkit-box-shadow: 10px 10px 18px -3px rgba(155,155,155,0.6);
+          -moz-box-shadow: 10px 10px 18px -3px rgba(155,155,155,0.6);"><i class="bi bi-plus-circle me-2"></i>Tambah Data</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+    </div>
+
+    <div class="container" style="margin-top: -155px;margin-bottom:70px">
+      <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 row-cols-lg-5">
+        <div class="col mb-4">
+          <div class="card" style="height:400px;box-shadow: 10px 10px 18px -3px rgba(155,155,155,0.6);
+          -webkit-box-shadow: 10px 10px 18px -3px rgba(155,155,155,0.6);
+          -moz-box-shadow: 10px 10px 18px -3px rgba(155,155,155,0.6);">
+            <img src="Assets/img/bukan-buku.jpg" style="object-fit: cover;" height="250px" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h6 class="card-subtitle mb-2 text-muted fs-6">Ria Ricis</h6>
+              <a href="detail.html" class="text-decoration-none"><h5 class="card-title">Bukan Buku Nikah</h5></a>
+              <p class="card-text fs-5">
+                Rp 100.000
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card" style="height:400px;box-shadow: 10px 10px 18px -3px rgba(155,155,155,0.6);
+          -webkit-box-shadow: 10px 10px 18px -3px rgba(155,155,155,0.6);
+          -moz-box-shadow: 10px 10px 18px -3px rgba(155,155,155,0.6);">
+            <img src="Assets/img/kekasih-musim-gugur.jpg" style="object-fit: cover;" height="250px" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h6 class="card-subtitle mb-2 text-muted fs-6">Laksmi Pamuntjak</h6>
+              <a href="detail.html" class="text-decoration-none"><h5 class="card-title">Kekasih Musim Gugur</h5></a>
+              <p class="card-text fs-5">
+                Rp 100.000
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card" style="height:400px;box-shadow: 10px 10px 18px -3px rgba(155,155,155,0.6);
+          -webkit-box-shadow: 10px 10px 18px -3px rgba(155,155,155,0.6);
+          -moz-box-shadow: 10px 10px 18px -3px rgba(155,155,155,0.6);">
+            <img src="Assets/img/dikta-hukum.jpg" style="object-fit: cover;" height="250px" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h6 class="card-subtitle mb-2 text-muted fs-6">Dhia'an Farah</h6>
+              <a href="detail.html" class="text-decoration-none"><h5 class="card-title">Dikta & Hukum</h5></a>
+              <p class="card-text fs-5">
+                Rp 100.000
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card" style="height:400px;box-shadow: 10px 10px 18px -3px rgba(155,155,155,0.6);
+          -webkit-box-shadow: 10px 10px 18px -3px rgba(155,155,155,0.6);
+          -moz-box-shadow: 10px 10px 18px -3px rgba(155,155,155,0.6);">
+            <img src="Assets/img/tere-liye.jpg" style="object-fit: cover;" height="250px" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h6 class="card-subtitle mb-2 text-muted fs-6">Tere Liye</h6>
+              <a href="detail.html" class="text-decoration-none"><h5 class="card-title">Si Putih</h5></a>
+              <p class="card-text fs-5">
+                Rp 100.000
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card" style="height:400px;box-shadow: 10px 10px 18px -3px rgba(155,155,155,0.6);
+          -webkit-box-shadow: 10px 10px 18px -3px rgba(155,155,155,0.6);
+          -moz-box-shadow: 10px 10px 18px -3px rgba(155,155,155,0.6);">
+            <img src="Assets/img/rapijali.jpeg" height="250px" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h6 class="card-subtitle mb-2 text-muted fs-6">Dee Lestari</h6>
+              <a href="detail.html" class="text-decoration-none"><h5 class="card-title">Rapijali</h5></a>
+              <p class="card-text fs-5">
+                Rp 100.000
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer-07">
+      <div class="container">
+				<div class="row justify-content-center mt-3">
+					<div class="col-md-12 text-center">
+						<ul class="ftco-footer-social p-0">
+              <li class="ftco-animate"><a href="https://github.com/rachmatjackly/grandamedia" ><span class="ion-social-github"></span></a></li>
+              <li class="ftco-animate"><a href="https://www.instagram.com/gdscug/" ><span class="ion-social-instagram"></span></a></li>
+            </ul>
+					</div>
+				</div>
+				<div class="row mt-2">
+					<div class="col-md-12 text-center">
+						<p class="copyright text-white">
+					  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This is made with <i class="ion-ios-heart" style="color: red;" aria-hidden="true"></i> by GDSC UG</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="Assets/js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
